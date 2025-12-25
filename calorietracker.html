@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorie & Protein Tracker</title>
+  <link rel="stylesheet" href="d:/1/calorietracker.css">
+</head>
+
+<body class="calorie-page">
+
+<div class="tracker-card">
+  <h1>🔥 Calorie & Protein Tracker</h1>
+  <p class="subtitle">Select Indian foods and track your daily intake</p>
+
+  <div class="food-select">
+    <select id="food">
+      <option value="">Select Food</option>
+    </select>
+
+    <input type="number" id="quantity" placeholder="Quantity (grams)">
+    <button onclick="addFood()">Add</button>
+  </div>
+
+  <div class="totals">
+    <p>🍚 Total Calories: <span id="totalCalories">0</span> kcal</p>
+    <p>💪 Total Protein: <span id="totalProtein">0</span> g</p>
+  </div>
+
+  <ul id="foodList"></ul>
+
+  <button class="reset-btn" onclick="resetTracker()">Reset Day</button>
+</div>
+
+<script src="d:/1/calorietracker.js"></script>
+</body>
+</html>

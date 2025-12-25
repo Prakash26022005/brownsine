@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Diet Planner</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="dashboard-page">
+
+<div class="container">
+  <header>
+    <h1>🍏 Smart Diet Planner</h1>
+    <p>Get personalized diet recommendations based on your weight and meal time.</p>
+  </header>
+
+  <!-- USER INPUT -->
+  <div class="bmi-card">
+    <input id="userWeight" type="number" placeholder="Enter your weight (kg)">
+
+    <select id="mealTime">
+      <option value="">Select Meal</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+    </select>
+
+    <button onclick="suggestDiet()">Suggest My Diet</button>
+  </div>
+
+  <!-- RESULT -->
+  <h2 id="dietTitle"></h2>
+  <div id="foodSuggestions" class="food-grid"></div>
+</div>
+
+<script src="smartdiet.js"></script>
+</body>
+</html>

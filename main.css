@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* DASHBOARD BACKGROUND */
+.dashboard-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55
+  );
+  color: #ffffff;
+}
+/* ===== BMI TRACKER PAGE BACKGROUND (CLEAN & UNIQUE) ===== */
+body.diet-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 15px;
+  text-align: center;
+  color: #ffffff;
+
+  /* SMOOTH SINGLE GRADIENT – NO LINES */
+  background: linear-gradient(
+    160deg,
+    #1d2671,
+    #ea6791
+  );
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* UNIQUE AURORA-STYLE BACKGROUND */
+  background: radial-gradient(
+      circle at top left,
+      #1cb5e0,
+      #000046 40%,
+      #0f2027 70%
+    );
+  margin: 0;
+  padding: 40px 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ===== TITLES ===== */
+.title, h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitle, p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ===== BMI CARD ===== */
+.bmi-card {
+  max-width: 480px;
+  margin: auto;
+  padding: 28px;
+
+  /* GLASS + COOL BLUE TINT */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.18),
+    rgba(255,255,255,0.08)
+  );
+
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== INPUTS ===== */
+.bmi-card input {
+  width: 92%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* ===== SELECT + BUTTON ROW ===== */
+.action-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== SELECT ===== */
+.bmi-card select {
+  flex: 1;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+
+  /* SOFT TEAL GRADIENT */
+  background: linear-gradient(135deg, #d0f1f0, #a3dcd9);
+  color: #004d40;
+  cursor: pointer;
+  appearance: none;
+}
+
+.bmi-card select option {
+  background: #fff;
+  color: #333;
+}
+
+/* ===== BUTTON ===== */
+.bmi-card button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+
+  /* WARM CONTRAST BUTTON */
+  background: linear-gradient(135deg, #ff6a00, #ff3d00);
+
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bmi-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 87, 34, 0.5);
+}
+
+/* ===== BMI RESULT ===== */
+.result {
+  margin-top: 25px;
+}
+
+#bmiValue {
+  font-size: 22px;
+}
+
+#bmiStatus {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#bmiAdvice {
+  text-align: left;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+
+  /* SOFT PURPLE GLASS */
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.18),
+    rgba(200,200,255,0.12)
+  );
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== DIET TITLE ===== */
+#dietTitle {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #ffd54f;
+}
+
+/* ===== FOOD GRID ===== */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+/* ===== FOOD CARD ===== */
+.food-card {
+  background: linear-gradient(135deg, #ffffff, #f1f8e9);
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== FOOD IMAGE ===== */
+.food-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #388e3c;
+  margin-bottom: 10px;
+}
+
+/* ===== FOOD TEXT ===== */
+.food-card h3 {
+  margin: 8px 0 4px;
+  font-size: 16px;
+  color: #388e3c;
+}
+
+.food-card p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* ===== FOOD RECIPE ===== */
+.food-recipe {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #ede7f6, #f3e5f5);
+  color: #6a1b9a;
+
+  font-size: 13px;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+/* ===== CLICK HIGHLIGHT ===== */
+.food-card.highlight {
+  background-color: #fff3e0;
+}
+
+/* ===== GYM PLAN GRID ===== */
+.gym-plan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* ===== DAY CARD ===== */
+.day {
+  background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+.day h3 {
+  color: #2ecc71;
+}
+
+.day p {
+  font-weight: bold;
+}
+
+/* ===== WORKOUT LIST ===== */
+.day ul {
+  padding-left: 20px;
+}
+
+.day li {
+  cursor: pointer;
+  margin: 8px 0;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.day li:hover {
+  color: #2ecc71;
+  transform: translateX(5px);
+}
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 18px;
+  width: 90%;
+  max-width: 420px;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+/* HIDE RESULT BOX BY DEFAULT */
+.result {
+  display: none;
+}  

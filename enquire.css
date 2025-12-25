@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.enquire-container {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* TITLE */
+.enquire-container h1 {
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+.enquire-container p {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.enquire-form input,
+.enquire-form select,
+.enquire-form textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.enquire-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: linear-gradient(135deg, #2ecc71, #6fffb0);
+  color: #003d26;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.enquire-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(46,204,113,0.45);
+}
+
+/* BACK LINK */
+.back-link {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  color: #ffd54f;
+  font-size: 14px;
+}

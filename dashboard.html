@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Tracker</title>
+
+  <link rel="stylesheet" href="d:/1/main.css">
+</head>
+<body class="diet-page">
+
+  <h1 class="title">BMI Health Tracker</h1>
+  <p class="subtitle">Check your body mass index and health guidance</p>
+
+  <div class="bmi-card">
+    <h2>Calculate Your BMI</h2>
+
+    <input id="weight" type="number" placeholder="Weight (kg)" min="30" max="200">
+    <input id="height" type="number" placeholder="Height (cm)" min="100" max="230">
+
+    <button onclick="calculateBMI()">Check Status</button>
+
+    <div class="result">
+      <h3 id="bmiValue"></h3>
+      <h3 id="bmiStatus"></h3>
+      <div id="bmiAdvice"></div>
+    </div>
+  </div>
+
+  <script src="bmi.js"></script>
+</body>
+</html>

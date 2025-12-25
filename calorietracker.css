@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.calorie-page {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.tracker-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+/* Title */
+.tracker-card h1 {
+  color: #11998e;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.food-select {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.food-select select,
+.food-select input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.food-select button {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Totals */
+.totals {
+  background: #f1fdf7;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.totals p {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+/* Food List */
+#foodList {
+  list-style: none;
+  padding: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+#foodList li {
+  background: #f6f6f6;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+/* Reset */
+.reset-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  font-weight: 600;
+  cursor: pointer;
+}

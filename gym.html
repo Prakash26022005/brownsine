@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Gym Workout Plan</title>
+  <link rel="stylesheet" href="d:/1/main.css">
+</head>
+
+<body>
+
+<h1 class="title" style="text-align:center;">💪 Weekly Gym Workout Plan</h1>
+<p class="subtitle" style="text-align:center;">Click any workout to see how to perform it</p>
+
+<div class="gym-plan">
+
+  <!-- MONDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Monday</h3>
+    <p>Chest + Triceps</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Bench Press','d:/1/gym/1.gif')">Bench Press</li>
+      <li onclick="showWorkout('Incline Dumbbell Press','d:/1/gym/2.gif')">Incline Dumbbell Press</li>
+      <li onclick="showWorkout('Chest Fly','d:/1/gym/3.gif')">Chest Fly</li>
+      <li onclick="showWorkout('Tricep Dips','d:/1/gym/4.gif')">Tricep Dips</li>
+      <li onclick="showWorkout('Tricep Pushdown','d:/1/gym/5.gif')">Tricep Pushdown</li>
+    </ol>
+  </div>
+
+  <!-- TUESDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Tuesday</h3>
+    <p>Back + Biceps</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Pull-ups','d:/1/gym/6.gif')">Pull-ups</li>
+      <li onclick="showWorkout('Lat Pulldown','d:/1/gym/7.gif')">Lat Pulldown</li>
+      <li onclick="showWorkout('Seated Row','d:/1/gym/8.gif')">Seated Row</li>
+      <li onclick="showWorkout('Bicep Curls','d:/1/gym/9.gif')">Bicep Curls</li>
+      <li onclick="showWorkout('Hammer Curls','d:/1/gym/10.gif')">Hammer Curls</li>
+    </ol>
+  </div>
+
+  <!-- WEDNESDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Wednesday</h3>
+    <p>Legs</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Squats','d:/1/gym/11.gif.gif')">Squats</li>
+      <li onclick="showWorkout('Leg Press','d:/1/gym/12.gif')">Leg Press</li>
+      <li onclick="showWorkout('Leg Extension','d:/1/gym/13.gif')">Leg Extension</li>
+      <li onclick="showWorkout('Leg Curl','d:/1/gym/14.gif')">Leg Curl</li>
+      <li onclick="showWorkout('Calf Raises','d:/1/gym/15.gif')">Calf Raises</li>
+    </ol>
+  </div>
+
+  <!-- THURSDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Thursday</h3>
+    <p>Shoulders</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Overhead Press','d:/1/gym/16.gif')">Overhead Press</li>
+      <li onclick="showWorkout('Lateral Raises','d:/1/gym/17.gif')">Lateral Raises</li>
+      <li onclick="showWorkout('Front Raises','d:/1/gym/18.gif')">Front Raises</li>
+      <li onclick="showWorkout('Rear Delt Fly','d:/1/gym/19.gif')">Rear Delt Fly</li>
+      <li onclick="showWorkout('Shrugs','d:/1/gym/20.gif')">Shrugs</li>
+    </ol>
+  </div>
+
+  <!-- FRIDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Friday</h3>
+    <p>Arms + Abs</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Barbell Curl','d:/1/gym/21.gif')">Barbell Curl</li>
+      <li onclick="showWorkout('Skull Crushers','d:/1/gym/22.gif')">Skull Crushers</li>
+      <li onclick="showWorkout('Plank','d:/1/gym/23.gif')">Plank</li>
+      <li onclick="showWorkout('Leg Raises','d:/1/gym/24.gif')">Leg Raises</li>
+      <li onclick="showWorkout('Crunches','d:/1/gym/25.gif')">Crunches</li>
+    </ol>
+  </div>
+  <!-- SATURDAY -->
+  <div class="day" style="text-align:center;">
+    <h3>Saturday</h3>
+    <p>Cardio + Core</p>
+    <ol style="display:inline-block; text-align:left;">
+      <li onclick="showWorkout('Treadmill','d:/1/gym/26.gif')">Treadmill – 20 min</li>
+      <li onclick="showWorkout('Cycling','d:/1/gym/27.gif')">Cycling – 15 min</li>
+      <li onclick="showWorkout('Russian Twists','d:/1/gym/28.gif')">Russian Twists</li>
+      <li onclick="showWorkout('Mountain Climbers','d:/1/gym/29.gif')">Mountain Climbers</li>
+    </ol>
+  </div>
+
+</div>
+</div>
+
+
+<!-- MODAL -->
+<div id="workoutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeWorkout()">×</span>
+    <h2 id="workoutTitle"></h2>
+    <img id="workoutGif">
+  </div>
+</div>
+
+<script src="d:/1/gym.js"></script>
+</body>
+</html>

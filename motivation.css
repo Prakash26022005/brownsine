@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #ffffff;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-box {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffcc70;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 70px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffcc70;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* ===== QUOTE ===== */
+.quote-box {
+  background: rgba(255,255,255,0.1);
+  margin: 60px auto;
+  padding: 40px;
+  max-width: 750px;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.quote-box p {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #ffcc70;
+}
+
+/* ===== CTA ===== */
+.cta {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.cta h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 35px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffcc70, #ff9a00);
+  color: #1a1a1a;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  opacity: 0.8;
+}
